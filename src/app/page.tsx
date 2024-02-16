@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-6 md:p-24">
       <div className="z-10 max-w-xl w-full flex flex-col gap-5 justify-between">
-        <div className="bg-slate-900 text-white shadow-lg rounded-lg w-full h-96">
+        <div className="bg-slate-900 text-white shadow-lg rounded-lg w-full max-h-[400px] overflow-y-auto scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-300">
           {messages.map((m) => (
             <div key={m.id} className="whitespace-pre-wrap px-4 py-2">
               <h1>{m.role === "user" ? "Me" : "Ai:"}</h1>
